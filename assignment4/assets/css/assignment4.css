@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/* -----Section 1----- */
+
+header{
+    display: flex;
+    height: 10rem;
+    color: white;
+    background-color:grey;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 400%;
+    margin: auto 2rem;
+    text-transform: uppercase;
+}
+header>i{
+    font-size: 7rem;
+    margin-left: 2rem;
+}
+nav{
+    height: 3rem;
+    background-color: grey;
+    position: sticky;
+    top: 0;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav li{
+    list-style-type: none;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-self: center;
+    padding: 0 .5rem;
+    color: lightgray;
+    padding: .9rem;
+}
+nav a:hover, nav a:focus{
+    color: lightpink;
+    transition: .3s;
+    background-color: rgb(131, 131, 131);
+}
+
+/* -----Section 2----- */
+
+#about{
+    display: flex;
+    margin: 4rem 3%;
+    padding: 1rem;
+}
+#images{
+    margin-right: 2rem;
+}
+#aboutUs{
+    order: 2;
+    align-self: center;
+}
+#aboutUs p{
+    margin: 1rem auto;
+}
+h2, h3{
+    text-transform: uppercase;
+}
+#workplace{
+    width: 30rem;
+    height: 20rem;
+    background-size: cover;
+    background-image: url("../img/photo1.jpg");
+}
+#workplace:hover{
+    background-image: url("../img/photo2.jpg");
+    transition: .3s;
+}
+
+/* -----Section 3----- */
+
+#description{
+    display: flex;
+    margin: 3%;
+}
+#jobDes>p{
+    margin: 1rem auto;
+}
+#jobDes{
+    text-align: right;
+    margin: 2rem;
+    align-self: center;
+}
+
+/* -----Section 4----- */
+
+#duties h2{
+    padding-top: 7rem;
+    text-align: center;
+}
+.table1{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    vertical-align: top;
+    padding-bottom: 10rem;
+}
+#duties-table{
+    border: 5px solid white;
+    border-collapse: collapse;
+    width: 50%;
+}
+#duties td{
+    color: black;
+    background-color:lightgray;
+    border: 2px solid white;
+    width: 50%;
+    text-align: left;
+}
+
+/* -----Section 5----- */
+
+#parent-table{
+    border: 5px solid white;
+    border-collapse: collapse;
+    width: 70%;
+}
+.table1 th{
+    font-family: Montserrat;
+    border: 5px solid white;
+    border-collapse: collapse;
+    height: 70px;
+    width: 50%;
+    background-color: lightpink;
+}
+.table1 td{
+    font-family: Montserrat;
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+#qualifications h2{
+    text-align: center;
+}
+#caption1{
+    position: relative;
+    top: 25px;
+    left: 260px;
+}
+#caption2{
+    position: relative;
+    top: 335px;
+    left: 260px;
+}
+.table2{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    padding-bottom: 10rem;
+}
+.table2 th{
+    font-family: Montserrat;
+    border-collapse: collapse;
+    height: 70px;
+    width: 50%;
+    background-color: lightpink;
+    border: 5px solid lightgray;
+}
+.table2 td{
+    font-family: Montserrat;
+    border-collapse: collapse;
+    padding: 1rem;
+    border: 5px solid lightgray;
+    text-align: left;
+}
+#left-table{
+    border-collapse: collapse;
+    margin: 2rem;
+}
+#left-table td{
+    width: 50%;
+    background-color: white;
+    border: 5px solid lightgray;
+    text-align: left;
+}
+#right-table{
+    border-collapse: collapse;
+    margin: 2rem;
+}
+#right-table td{
+    width: 50%;
+    background-color: white;
+    border: 5px solid lightgray;
+    text-align: left;
+}
+
+/* -----Section 6----- */
+
+#apply{
+    text-align: center;
+}
+#form{
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+fieldset{
+    width: 55vw;
+    border: 10px solid lightgray;
+}
+fieldset legend{
+    font-size: 120%;
+    margin-left: 8.5rem;
+    margin-right: 8.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} 
+.box, .send-job-postings, .commentsbox{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    flex: 50%;
+}
+.box label{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    flex-basis: 10rem;
+}
+.agree, .buttons{
+    text-align: center;
+    padding: .5rem;
+    width: 100%;
+}
+.seekingbox{
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+}
+.resumebox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    width: 100%; 
+}
+.seeking{
+    display: flex;
+    align-items: center;
+    flex: 43%;
+}
+.seeking label{
+    display: flex;
+    margin-right: 1rem;
+}
+.seeking .seekingbox label{
+    display: flex;
+    margin-right: 4rem;
+    margin-left: .5rem;
+    margin-top: .2rem;
+}
+#part-time{
+    margin-left: 5rem;
+}
+#part-time, #full-time{
+    margin-top: .5rem;
+}
+#fname, #lname, #email, #address, #postal, #country, #province{
+    font-size: 20px;
+}
+.travelbox2{
+    display: flex;
+    flex-direction: row;   
+}
+.travelbox2 label{
+    margin-right: 2rem;
+}
+.travelbox1{
+    display: flex;
+    align-items: center;   
+}
+#travel{
+    padding: 2.5rem;
+}
+#never, #ten, #forty, #fifty{
+    margin-top: .2rem;
+    margin-right: 1rem;
+}
+.resumebox label, #resume{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+.send-job-postings label, #job-postings{
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+}
+.commentsbox label{
+    margin: 2rem;
+}
+.agree{
+    margin: 1rem;
+}
+#button1, #button2{
+    font-size: 15px;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+/* -----Footer----- */
+
+#members{
+    font-size: 300%;
+    text-align: center;
+    margin-top: 10rem;
+}
+.pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#milanie{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+#samantha{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+#milanie, #samantha{
+    margin: 1rem;
+    border: solid lightgray 5px; 
+    border-radius: 100%;
+    margin-bottom: 3rem;
+}
+.name1 p:nth-of-type(1){
+    font-size: 150%;
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+.name2 p:nth-of-type(1){
+    font-size: 150%;
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+.name1 p:nth-of-type(2), .name2 p:nth-of-type(2){
+    font-size: 110%;
+    width: 70%;
+    text-align: center;
+}
